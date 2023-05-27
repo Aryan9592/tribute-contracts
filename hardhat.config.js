@@ -101,6 +101,12 @@ module.exports = {
       },
       signerId: process.env.SIGNER || undefined,
     },
+    wowen: {
+      url: "https://api.wowen.io/nodes/rpc",
+      network_id: 981,
+      chainId: 981,
+      accounts: [process.env.WALLET_MNEMONIC],
+    },
 
     // Main Networks
     mainnet: {
