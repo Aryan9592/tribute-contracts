@@ -34,9 +34,9 @@ SOFTWARE.
  */
 
 contract BankAdapterContract is AdapterGuard, Reimbursable {
-    bytes32 internal constant TokenName =
+    bytes32 internal immutable TokenName =
         keccak256("erc20.extension.tokenName");
-    bytes32 internal constant TokenSymbol =
+    bytes32 internal immutable TokenSymbol =
         keccak256("erc20.extension.tokenSymbol");
 
     /**
